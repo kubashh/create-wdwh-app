@@ -1,14 +1,14 @@
 {
   "name": "create-wdwh-app",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Create wdwh app (frontend without html)",
   "author": "kubashh",
   "license": "MIT",
   "keywords": [
     "react",
     "bun",
-    "wdwh",
     "create-wdwh-app",
+    "@kubashh/create-wdwh-app",
     "kubashh"
   ],
   "files": [
