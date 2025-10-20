@@ -1,0 +1,18 @@
+{
+  "private": true,
+  "scripts": {
+    "dev": "wdwh dev",
+    "build": "wdwh build"
+  },
+  "dependencies": {
+    "wdwh": "latest"
+  },
+  "devDependencies": {
+    "@types/react": "latest",
+    "@types/react-dom": "latest",
+    "@types/bun": "latest"
+  },
+  "peerDependencies": {
+    "typescript": "latest"
+  }
+}

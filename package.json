@@ -1,0 +1,29 @@
+{
+  "name": "create-wdwh-app",
+  "version": "1.0.0",
+  "description": "Create wdwh app (frontend without html)",
+  "author": "kubashh",
+  "license": "MIT",
+  "keywords": [
+    "react",
+    "bun",
+    "wdwh",
+    "create-wdwh-app",
+    "kubashh"
+  ],
+  "files": [
+    "index.ts",
+    "template"
+  ],
+  "bin": "./index.ts",
+  "scripts": {
+    "dev": "clear && bun dev.ts"
+  },
+  "devDependencies": {
+    "@types/bun": "latest"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 108
+  }
+}
