@@ -21,9 +21,9 @@ USAGE:
   process.exit(0)
 }
 
-createWdwhApp()
+await createWdwhApp()
 
-function createWdwhApp() {
+async function createWdwhApp() {
   const examplePath = `${__dirname}/template`
   const outPath = path.join(process.cwd(), process.argv[2])
 
@@ -31,6 +31,9 @@ function createWdwhApp() {
 
   cpSync(examplePath, outPath, { recursive: true, force: true })
   renameSync(`${outPath}/gitignore.txt`, `${outPath}/.gitignore`)
+  renameSync(`${outPath}/bunfig.toml.txt`, `${outPath}/bunfig.toml`)
+
+  await Bun.$`bun i`
 
   console.log(`Done.`)
 }
