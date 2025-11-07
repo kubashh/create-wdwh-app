@@ -9,4 +9,4 @@ bun create wdwh-app@latest my-app
 
 ## Related
 
-[wdwh](https://www.npmjs.com/package/wdwh) - web development without html
+[wdwh](https://npmjs.com/package/wdwh) - web development without html
