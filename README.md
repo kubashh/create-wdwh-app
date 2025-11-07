@@ -3,8 +3,7 @@
 ## Usage
 
 ```bash
-bun create wdwh-app@latest [path]
-bun create wdwh-app@latest my-app
+bun create wdwh-app@latest [path] # "." for current directory
 ```
 
 ## Related
