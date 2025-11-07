@@ -3,14 +3,12 @@
     "dev": "wdwh dev",
     "build": "wdwh build"
   },
-  "dependencies": {
-    "wdwh": "latest"
-  },
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
     "@types/bun": "latest",
-    "typescript": "latest"
+    "typescript": "latest",
+    "wdwh": "latest"
   },
   "prettier": {
     "semi": false,
