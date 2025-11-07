@@ -31,7 +31,6 @@ async function createWdwhApp() {
 
   cpSync(examplePath, outPath, { recursive: true, force: true })
   renameSync(`${outPath}/gitignore.txt`, `${outPath}/.gitignore`)
-  renameSync(`${outPath}/bunfig.toml.txt`, `${outPath}/bunfig.toml`)
 
   await Bun.$`bun i`
 

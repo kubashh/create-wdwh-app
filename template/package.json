@@ -1,5 +1,4 @@
 {
-  "private": true,
   "scripts": {
     "dev": "wdwh dev",
     "build": "wdwh build"
@@ -10,9 +9,11 @@
   "devDependencies": {
     "@types/react": "latest",
     "@types/react-dom": "latest",
-    "@types/bun": "latest"
-  },
-  "peerDependencies": {
+    "@types/bun": "latest",
     "typescript": "latest"
+  },
+  "prettier": {
+    "semi": false,
+    "printWidth": 108
   }
 }
