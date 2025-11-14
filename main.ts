@@ -5,34 +5,25 @@ import path from "path"
 
 if (process.argv.length <= 2) {
   console.log(`
-You must specyfy path! '.' means current directory. Run -h for help
-`)
-  process.exit(0)
-} else if (process.argv.includes(`-h`)) {
-  console.log(`
 create-wdwh-app
 
 USAGE:
 
-  create-wdwh-app .         # create app in current directory
-  create-wdwh-app my-app    # create app in 'my-app' directory
-  create-wdwh-app -h        # print help and exit
+  create-wdwh-app my-app    # create app in 'my-app' directory, "." for current directory
 `)
-  process.exit(0)
+  process.exit()
 }
 
-await createWdwhApp()
+createWdwhApp()
 
-async function createWdwhApp() {
-  const examplePath = `${__dirname}/template`
+function createWdwhApp() {
+  const examplePath = `${import.meta.dirname}/template`
   const outPath = path.join(process.cwd(), process.argv[2])
 
   console.log(`Copying files...`)
 
   cpSync(examplePath, outPath, { recursive: true, force: true })
   renameSync(`${outPath}/gitignore.txt`, `${outPath}/.gitignore`)
-
-  await Bun.$`bun i`
 
   console.log(`Done.`)
 }

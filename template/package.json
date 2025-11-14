@@ -5,7 +5,6 @@
   },
   "devDependencies": {
     "@types/react": "latest",
-    "@types/react-dom": "latest",
     "@types/bun": "latest",
     "typescript": "latest",
     "wdwh": "latest"
