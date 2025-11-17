@@ -20,10 +20,8 @@ function createWdwhApp() {
   const examplePath = `${import.meta.dirname}/template`
   const outPath = path.join(process.cwd(), process.argv[2])
 
-  console.log(`Copying files...`)
-
   cpSync(examplePath, outPath, { recursive: true, force: true })
   renameSync(`${outPath}/gitignore.txt`, `${outPath}/.gitignore`)
 
-  console.log(`Done.`)
+  console.log(`Run "bun i && bun dev" and start development!`)
 }

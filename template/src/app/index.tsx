@@ -2,9 +2,11 @@
 
 import App from "./App.tsx"
 
-export const config: Config = {
+export const config: WdwhConfig = {
   outdir: `./dist`,
   bundleCss: true,
+  hashFiles: true,
+  external: [],
 }
 
 export const metadata: Metadata = {
