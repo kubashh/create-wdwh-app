@@ -6,6 +6,7 @@ export const config: WdwhConfig = {
   outdir: `./dist`,
   bundleCss: true,
   hashFiles: true,
+  cleanPrev: true,
   external: [],
 }
 

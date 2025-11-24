@@ -1,6 +1,6 @@
 {
   "name": "create-wdwh-app",
-  "version": "1.2.6",
+  "version": "1.2.7",
   "description": "Create wdwh app (frontend without html)",
   "author": "kubashh",
   "license": "MIT",
@@ -12,7 +12,8 @@
   "bin": "./main.js",
   "scripts": {
     "dev": "clear && bun src/dev.ts",
-    "deploy": "bun src/deploy.ts"
+    "build": "bun build ./main.ts --outdir=. --minify --target=bun",
+    "pub": "bun src/publish.ts"
   },
   "devDependencies": {
     "@types/bun": "latest"
@@ -22,6 +23,7 @@
     "bun",
     "wdwh",
     "create-wdwh-app",
+    "typescript",
     "kubashh"
   ],
   "prettier": {
